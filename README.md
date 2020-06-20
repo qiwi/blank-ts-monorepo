@@ -1,2 +1,2 @@
 # blank-ts-monorepo
-Blank mono repository for TS OSS projects
+Template mono repository for TS OSS projects
