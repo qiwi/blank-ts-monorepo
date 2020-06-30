@@ -9,6 +9,7 @@
   "private": true,
   "scripts": {
     "clean": "lerna clean --yes && lerna run clean",
+    "prebuild": "tsc -b packages/facade/tsconfig.es5.json",
     "build": "yarn clean && yarn prebuild && lerna run build --stream --concurrency 2",
     "bootstrap": "lerna bootstrap",
     "jest": "jest",
@@ -23,14 +24,14 @@
     "release": "multi-semantic-release"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.0",
-    "@types/node": "^14.0.13",
+    "@types/jest": "^26.0.3",
+    "@types/node": "^14.0.14",
     "codeclimate-test-reporter": "^0.5.1",
     "coveralls": "^3.1.0",
     "find-git-root": "^1.0.4",
-    "jest": "^26.0.1",
+    "jest": "^26.1.0",
     "lerna": "^3.22.1",
-    "@qiwi/multi-semantic-release": "^3.0.2",
+    "@qiwi/multi-semantic-release": "^3.0.3",
     "snazzy": "^8.0.0"
   },
   "repository": {
