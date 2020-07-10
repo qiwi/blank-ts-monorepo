@@ -13,11 +13,10 @@
     "build": "yarn clean && yarn prebuild && lerna run build --stream --concurrency 2",
     "bootstrap": "lerna bootstrap",
     "jest": "jest",
-    "test:report": "yarn test && yarn codeclimate:push && yarn coveralls:push",
+    "test:report": "yarn test && yarn coveralls:push",
     "test": "yarn jest",
     "test:concurrent": "lerna run test --concurrency 1 --stream --no-prefix && yarn coverage:merge",
     "coverage:merge": "node scripts/js/coverage-merge.js",
-    "codeclimate:push": "codeclimate-test-reporter < ./coverage/lcov.info",
     "coveralls:push": "cat ./coverage/lcov.info | coveralls || echo 'coveralls push failed :(' && exit 0",
     "docs": "typedoc packages/**/src/main --ignoreCompilerErrors || exit 0",
     "postupdate": "yarn && yarn bootstrap && yarn build && yarn test",
@@ -26,7 +25,6 @@
   "devDependencies": {
     "@types/jest": "^26.0.4",
     "@types/node": "^14.0.20",
-    "codeclimate-test-reporter": "^0.5.1",
     "coveralls": "^3.1.0",
     "find-git-root": "^1.0.4",
     "jest": "^26.1.0",
@@ -36,6 +34,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qiwi/masker.git"
+    "url": "git+https://github.com/antongolub/blank-ts-monorepo.git"
   }
 }
