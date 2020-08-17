@@ -23,13 +23,13 @@
     "release": "multi-semantic-release"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.4",
-    "@types/node": "^14.0.20",
+    "@types/jest": "^26.0.10",
+    "@types/node": "^14.0.27",
     "coveralls": "^3.1.0",
     "find-git-root": "^1.0.4",
-    "jest": "^26.1.0",
+    "jest": "^26.4.0",
     "lerna": "^3.22.1",
-    "@qiwi/multi-semantic-release": "^3.1.0",
+    "@qiwi/multi-semantic-release": "^3.8.3",
     "snazzy": "^8.0.0"
   },
   "repository": {
