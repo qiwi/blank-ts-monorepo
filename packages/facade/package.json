@@ -42,14 +42,14 @@
     "blank-ts-monorepo-plugin": "*"
   },
   "devDependencies": {
-    "@qiwi/libdefkit": "^1.0.2",
+    "@qiwi/libdefkit": "^1.0.3",
     "@qiwi/semantic-release-gh-pages-plugin": "^4.0.3",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/github": "^7.0.7",
     "@semantic-release/npm": "^7.0.5",
     "@types/jest": "^26.0.10",
-    "eslint-plugin-typescript": "^0.14.0",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
     "jest": "^26.4.0",
     "terser": "^5.1.0",
     "ts-jest": "^26.2.0",
