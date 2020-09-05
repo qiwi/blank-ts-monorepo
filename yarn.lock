@@ -9379,7 +9379,7 @@ typedoc-plugin-external-module-name@^4.0.3:
     lodash "^4.1.2"
     semver "^7.1.1"
 
-typedoc@^0.19.0:
+typedoc@^0.19.1:
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.19.1.tgz#1c92608fc4944c6e2223cf3a43b603272b4ac94d"
   integrity sha512-EqZpRJQUnkwHA1yBhaDExEXUZIiWKddkrDXhRcfUzpnu6pizxNmVTw5IZ3mu682Noa4zQCniE0YNjaAwHQodrA==
