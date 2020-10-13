@@ -8357,6 +8357,11 @@ prepend-http@^1.0.0, prepend-http@^1.0.1:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
 
+prettier-config-qiwi@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/prettier-config-qiwi/-/prettier-config-qiwi-1.2.0.tgz#27f87f72843e3e49232819a888b1236bccab84f0"
+  integrity sha512-N32LuCXB859k7pRNO5xFFLc6YpOT5fo4V7Q7BW5mIVcZFq8P6ophhma8d00BbwqSjPpragRZRA8ZMfFqo+gQrA==
+
 prettier@^2.0.5, prettier@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.2.tgz#3050700dae2e4c8b67c4c3f666cdb8af405e1ce5"

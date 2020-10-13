@@ -33,7 +33,8 @@
     "build:libdef": "libdefkit --tsconfig=tsconfig.es5.json --tsconfig=tsconfig.es6.json",
     "docs": "typedoc --readme README.md --tsconfig tsconfig.es5.json src/main --ignoreCompilerErrors || exit 0",
     "uglify": "for f in $(find target -name '*.js'); do short=${f%.js}; terser -c -m -o $short.js -- $f; done",
-    "postupdate": "yarn && yarn build && yarn test"
+    "postupdate": "yarn && yarn build && yarn test",
+    "format": "prettier --write 'src/**/*.ts'"
   },
   "dependencies": {
     "@qiwi/substrate": "^1.19.0",
@@ -52,5 +53,6 @@
   "bugs": {
     "url": "https://github.com/antongolub/blank-ts-monorepo/issues"
   },
-  "homepage": "https://github.com/antongolub/blank-ts-monorepo/#readme"
+  "homepage": "https://github.com/antongolub/blank-ts-monorepo/#readme",
+  "prettier": "prettier-config-qiwi"
 }
