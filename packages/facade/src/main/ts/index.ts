@@ -1,1 +1,1 @@
-export {foo} from 'blank-ts-monorepo-common'
+export { foo } from 'blank-ts-monorepo-common'
