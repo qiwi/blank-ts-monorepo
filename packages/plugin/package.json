@@ -37,8 +37,8 @@
     "format": "prettier --write 'src/**/*.ts'"
   },
   "dependencies": {
-    "@qiwi/substrate": "^1.19.0",
-    "tslib": "^2.0.1",
+    "@qiwi/substrate": "^1.19.2",
+    "tslib": "^2.0.3",
     "blank-ts-monorepo-common": "*"
   },
   "devDependencies": {},
