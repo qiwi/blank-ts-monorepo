@@ -20,10 +20,7 @@ jobs:
           name: linux-shared
           paths:
             - node_modules
-            - target
-            - flow-typed
-            - typings
-            - docs
+            - packages
     - <<: *build
       os: windows
       script: yarn build
@@ -34,13 +31,12 @@ jobs:
           name: win-shared
           paths:
             - node_modules
-            - target
+            - packages
 
     - &test
       stage: test
       os: linux
       node_js: 12
-      install: yarn bootstrap
       script: yarn test
       workspaces:
         use: linux-shared
