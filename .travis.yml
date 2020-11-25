@@ -31,7 +31,7 @@ jobs:
           name: win-shared
           paths:
             - node_modules
-            - packages
+            - packages/**/target
 
     - &test
       stage: test
@@ -55,12 +55,14 @@ jobs:
       os: windows
       env: YARN_GPG=no
       node_js: 12
+      install: yarn bootstrap
       workspaces:
         use: win-shared
     - <<: *test
       os: windows
-      env: YARN_GPG=no
       node_js: 14
+      install: yarn bootstrap
+      env: YARN_GPG=no
       workspaces:
         use: win-shared
 
