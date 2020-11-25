@@ -8,7 +8,9 @@ jobs:
     - &build
       os: linux
       stage: build
-      install: yarn
+      install:
+        - yarn
+        - yarn bootstrap
       script:
         - yarn build
         - yarn uglify
