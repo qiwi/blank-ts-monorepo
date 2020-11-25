@@ -10,7 +10,8 @@
   "scripts": {
     "clean": "lerna clean --yes && lerna run clean",
     "prebuild": "tsc -b packages/facade/tsconfig.es5.json",
-    "build": "yarn clean && yarn prebuild && lerna run build --stream --concurrency 2",
+    "build": "yarn prebuild && lerna run build --stream --concurrency 2",
+    "uglify": "lerna run uglify --stream --concurrency 2",
     "bootstrap": "lerna bootstrap",
     "jest": "jest",
     "test:report": "yarn test && yarn coveralls:push",
@@ -19,7 +20,7 @@
     "coverage:merge": "node scripts/js/coverage-merge.js",
     "coveralls:push": "cat ./coverage/lcov.info | coveralls || echo 'coveralls push failed :(' && exit 0",
     "docs": "typedoc packages/**/src/main --ignoreCompilerErrors || exit 0",
-    "postupdate": "yarn && yarn bootstrap && npx yarn-audit-fix --audit-level=moderate && yarn build && yarn test"
+    "postupdate": "yarn && yarn bootstrap && npx yarn-audit-fix --audit-level=moderate && yarn clean && yarn build && yarn test"
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",
