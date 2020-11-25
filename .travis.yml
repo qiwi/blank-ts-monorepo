@@ -1,25 +1,47 @@
 language: node_js
 node_js: 14
+os: linux
+install: skip
 
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
+jobs:
+  include:
+    - os: linux
+      stage: build
+      install: yarn
+      script: yarn build
+      # https://docs.travis-ci.com/user/using-workspaces/
+      workspaces:
+        create:
+          name: shared
+          paths:
+            - node_modules
+            - target
+            - flow-typed
+            - typings
+            - docs
 
-after_script:
-  - ./cc-test-reporter format-coverage -t lcov ./coverage/lcov.info
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+    - &test
+      stage: test
+      os: linux
+      node_js: 12
+      script: yarn test
+      workspaces:
+        use: shared
+    - <<: *test
+      node_js: 14
+      before_script:
+        - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+        - chmod +x ./cc-test-reporter
+        - ./cc-test-reporter before-build
+      script:
+        - yarn test:report
+      after_script:
+        - ./cc-test-reporter format-coverage -t lcov ./coverage/lcov.info
+        - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
-install:
-  - yarn
-
-script:
-  - yarn build
-  - yarn test:report
-
-deploy:
-  provider: script
-  skip_cleanup: true
-  script: echo 'Deploy step is disabled' && exit 0
-  # script: npx -p @qiwi/semrel-toolkit multi-semrel
-
+    - stage: release
+      if: branch = master AND type != pull_request
+      workspaces:
+        use: shared
+      script: echo 'Deploy step is disabled' && exit 0
+      # script: npx -p @qiwi/semrel-toolkit multi-semrel
