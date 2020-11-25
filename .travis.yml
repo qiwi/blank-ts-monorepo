@@ -1,9 +1,5 @@
 language: node_js
-node_js:
-  - '10'
-
-before_install:
-  - npm install -g yarn
+node_js: 14
 
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -15,7 +11,6 @@ after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 install:
-  - yarn cache clean
   - yarn
 
 script:
@@ -25,5 +20,6 @@ script:
 deploy:
   provider: script
   skip_cleanup: true
-  script:
-    - npx -p @qiwi/semrel-toolkit multi-semrel
+  script: echo 'Deploy step is disabled' && exit 0
+  # script: npx -p @qiwi/semrel-toolkit multi-semrel
+
