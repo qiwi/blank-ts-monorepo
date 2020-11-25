@@ -1,24 +1,35 @@
 language: node_js
 node_js: 14
-os: linux
 install: skip
+cache: yarn
 
 jobs:
   include:
-    - os: linux
+    - &build
+      os: linux
       stage: build
       install: yarn
       script: yarn build
       # https://docs.travis-ci.com/user/using-workspaces/
       workspaces:
         create:
-          name: shared
+          name: linux-shared
           paths:
             - node_modules
             - target
             - flow-typed
             - typings
             - docs
+    - <<: *build
+      os: windows
+      # https://travis-ci.community/t/timeout-after-build-finished-and-succeeded/1336/2
+      env: YARN_GPG=no
+      workspaces:
+        create:
+          name: win-shared
+          paths:
+            - node_modules
+            - target
 
     - &test
       stage: test
@@ -26,7 +37,15 @@ jobs:
       node_js: 12
       script: yarn test
       workspaces:
-        use: shared
+        use: linux-shared
+    - <<: *test
+      os: windows
+      env: YARN_GPG=no
+      node_js:
+        - 12
+        - 14
+      workspaces:
+        use: win-shared
     - <<: *test
       node_js: 14
       before_script:
@@ -42,6 +61,6 @@ jobs:
     - stage: release
       if: branch = master AND type != pull_request
       workspaces:
-        use: shared
+        use: linux-shared
       script: echo 'Deploy step is disabled' && exit 0
       # script: npx -p @qiwi/semrel-toolkit multi-semrel
