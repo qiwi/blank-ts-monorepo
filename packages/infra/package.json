@@ -28,28 +28,30 @@
     "tslib": "^2.0.3"
   },
   "devDependencies": {
+    "@swissquote/crafty-preset-jest": "^1.13.7",
     "@qiwi/libdefkit": "^2.1.5",
     "@types/jest": "^26.0.15",
+    "cpy-cli": "^3.1.1",
     "jest": "^26.6.3",
     "terser": "^5.5.0",
     "ts-jest": "^26.4.4",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-config-qiwi": "^1.10.0",
+    "mkdirp": "^1.0.4",
     "prettier": "^2.2.0",
     "prettier-config-qiwi": "^1.3.0",
     "typedoc": "^0.19.2",
     "typedoc-plugin-external-module-name": "^4.0.3",
     "typescript": "^4.1.2",
-    "rimraf": "^3.0.2",
-    "@swissquote/crafty-preset-jest": "^1.13.7"
+    "rimraf": "^3.0.2"
   },
+  "license": "MIT",
+  "author": "Anton Golub <mailbox@antongolub.ru>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/antongolub/blank-ts-monorepo.git"
   },
-  "author": "Anton Golub <mailbox@antongolub.ru>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/antongolub/blank-ts-monorepo/issues"
   },
