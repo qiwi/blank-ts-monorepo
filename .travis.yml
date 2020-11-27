@@ -50,19 +50,18 @@ jobs:
       if: branch = master AND type = pull_request
       stage: test
       os: linux
-      node_js: 12
       script: yarn test
       workspaces:
         use: linux-shared
     - <<: *test
-      if: branch = master
-      node_js: 14
+      node_js: 12
+    - <<: *test
+      if: branch = master AND type != pull_request
       before_script:
         - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
         - chmod +x ./cc-test-reporter
         - ./cc-test-reporter before-build
-      script:
-        - yarn test:report
+      script: yarn test:report
       after_script:
         - ./cc-test-reporter format-coverage -t lcov ./coverage/lcov.info
         - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
@@ -70,14 +69,13 @@ jobs:
       if: branch = master AND type = pull_request AND env(CI_WIN_BUILD) = true
       os: windows
       env: YARN_GPG=no
-      node_js: 12
       install: yarn bootstrap
       workspaces:
         use: win-shared
     - <<: *test
       if: branch = master AND type = pull_request AND env(CI_WIN_BUILD) = true
       os: windows
-      node_js: 14
+      node_js: 12
       install: yarn bootstrap
       env: YARN_GPG=no
       workspaces:
