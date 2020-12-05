@@ -36,7 +36,7 @@
     "terser": "^5.5.0",
     "ts-jest": "^26.4.4",
     "eslint": "^7.14.0",
-    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-prettier": "^7.0.0",
     "eslint-config-qiwi": "^1.10.0",
     "mkdirp": "^1.0.4",
     "prettier": "^2.2.0",
