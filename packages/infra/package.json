@@ -13,38 +13,31 @@
   "typescript": {
     "definition": "target/es5/index.d.ts"
   },
-  "files": [
-    "README.md",
-    "CHANGELOG.md",
-    "target",
-    "typings",
-    "flow-typed"
-  ],
+  "files": [],
   "scripts": {
     "postupdate": "yarn"
   },
-  "dependencies": {
-    "@qiwi/substrate": "^1.19.5",
-    "tslib": "^2.0.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@swissquote/crafty-preset-jest": "^1.13.7",
     "@qiwi/libdefkit": "^2.1.5",
-    "@types/jest": "^26.0.15",
+    "@qiwi/npm-run-all": "^4.1.6",
+    "@types/jest": "^26.0.18",
     "cpy-cli": "^3.1.1",
     "jest": "^26.6.3",
-    "terser": "^5.5.0",
+    "terser": "^5.5.1",
     "ts-jest": "^26.4.4",
-    "eslint": "^7.14.0",
-    "eslint-config-prettier": "^6.15.0",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
     "eslint-config-qiwi": "^1.10.0",
     "mkdirp": "^1.0.4",
-    "prettier": "^2.2.0",
+    "prettier": "^2.2.1",
     "prettier-config-qiwi": "^1.3.0",
-    "typedoc": "^0.19.2",
+    "typedoc": "^0.20.0-beta.27",
     "typedoc-plugin-external-module-name": "^4.0.3",
     "typescript": "^4.1.2",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "depcheck": "^1.3.1"
   },
   "license": "MIT",
   "author": "Anton Golub <mailbox@antongolub.ru>",
