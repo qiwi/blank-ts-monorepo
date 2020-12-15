@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "temp/prebuild",
+    "emitDeclarationOnly": true,
+    "declaration": true
+  },
+  "references": [
+    { "path": "./packages/common/tsconfig.es5.json" },
+    { "path": "./packages/facade/tsconfig.es5.json" },
+    { "path": "./packages/plugin/tsconfig.es5.json" }
+  ]
+}
