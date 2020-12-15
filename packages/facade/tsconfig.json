@@ -7,6 +7,7 @@
     "outDir": "target/es5",
     "tsBuildInfoFile": "./buildcache/.tsbuildinfo"
   },
+  "baseUrl": "./packages",
   "references": [
     { "path": "../common" },
     { "path": "../plugin" }
