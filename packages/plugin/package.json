@@ -46,13 +46,13 @@
   "optionalDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antongolub/blank-ts-monorepo.git"
+    "url": "git+https://github.com/qiwi/blank-ts-monorepo.git"
   },
   "author": "Anton Golub <mailbox@antongolub.ru>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/antongolub/blank-ts-monorepo/issues"
+    "url": "https://github.com/qiwi/blank-ts-monorepo/issues"
   },
-  "homepage": "https://github.com/antongolub/blank-ts-monorepo/#readme",
+  "homepage": "https://github.com/qiwi/blank-ts-monorepo/#readme",
   "prettier": "prettier-config-qiwi"
 }

@@ -34,7 +34,6 @@
     "prettier": "^2.2.1",
     "prettier-config-qiwi": "^1.3.0",
     "typedoc": "^0.20.0-beta.27",
-    "typedoc-plugin-external-module-name": "^4.0.3",
     "typescript": "^4.1.2",
     "rimraf": "^3.0.2",
     "depcheck": "^1.3.1"
@@ -43,10 +42,10 @@
   "author": "Anton Golub <mailbox@antongolub.ru>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antongolub/blank-ts-monorepo.git"
+    "url": "git+https://github.com/qiwi/blank-ts-monorepo.git"
   },
   "bugs": {
-    "url": "https://github.com/antongolub/blank-ts-monorepo/issues"
+    "url": "https://github.com/qiwi/blank-ts-monorepo/issues"
   },
-  "homepage": "https://github.com/antongolub/blank-ts-monorepo/#readme"
+  "homepage": "https://github.com/qiwi/blank-ts-monorepo/#readme"
 }
