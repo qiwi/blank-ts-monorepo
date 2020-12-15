@@ -28,7 +28,7 @@
     "test": "npm-run-all -p -l lint test:unit test:depcheck",
     "test:unit": "jest --config=jest.config.json --runInBand",
     "test:depcheck": "depcheck --ignores tslib,eslint-*,prettier-*,*-infra --ignore-patterns typings",
-    "build": "yarn clean && npm-run-all -p -l build:es5 build:es6 build:ts build:libdef docs",
+    "build": "npm-run-all -p -l build:es5 build:es6 build:ts build:libdef docs",
     "build:es5": "mkdirp target/es5 && tsc -p tsconfig.es5.json",
     "build:es6": "mkdirp target/es6 && tsc -p tsconfig.es6.json",
     "build:ts": "cpy src/main/ts/ target/ts/",
