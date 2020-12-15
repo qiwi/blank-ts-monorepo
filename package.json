@@ -10,18 +10,18 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes && lerna run clean",
-    "lint": "lerna run lint --concurrency 3 --parallel --stream --no-prefix",
+    "lint": "lerna run lint --parallel --stream --no-prefix",
     "test": "npm-run-all -p -l lint test:unit test:depcheck test:depaudit",
     "test:unit": "jest --runInBand --detectOpenHandles --forceExit",
     "test:report": "yarn test && yarn coveralls:push",
-    "test:concurrent": "lerna run test --concurrency 3 --parallel --stream --no-prefix && yarn coverage:merge",
-    "test:depcheck": "lerna run test:depcheck --concurrency 3 --parallel --stream --no-prefix",
+    "test:concurrent": "lerna run test --parallel --stream --no-prefix && yarn coverage:merge",
+    "test:depcheck": "lerna run test:depcheck --parallel --stream --no-prefix",
     "test:depaudit": "npx yarn-audit-fix --audit-level=moderate",
     "coverage:merge": "node scripts/js/coverage-merge.js",
     "coveralls:push": "cat ./coverage/lcov.info | coveralls || echo 'coveralls push failed :(' && exit 0",
-    "build": "lerna run build --stream --concurrency 3 --parallel",
+    "build": "lerna run build --stream --parallel",
     "docs": "typedoc packages/**/src/main",
-    "uglify": "lerna run uglify --stream --concurrency 3 --parallel",
+    "uglify": "lerna run uglify --stream --parallel",
     "postupdate": "yarn && yarn bootstrap && yarn test:depaudit && yarn clean && yarn build && yarn test"
   },
   "devDependencies": {
