@@ -13,15 +13,23 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
 
     "module": "commonjs",
     "declaration": true,
+    "declarationMap": true,
     "sourceMap": true,
     "strict": true,
     "target": "es5",
 
     "esModuleInterop": true,
-    "composite": true,
-    "incremental": true
-  }
+    "incremental": true,
+    "composite": true
+  },
+  "include": [
+    "src/main/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

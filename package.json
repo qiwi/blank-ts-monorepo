@@ -19,6 +19,7 @@
     "test:depaudit": "npx yarn-audit-fix --audit-level=moderate",
     "coverage:merge": "node scripts/js/coverage-merge.js",
     "coveralls:push": "cat ./coverage/lcov.info | coveralls || echo 'coveralls push failed :(' && exit 0",
+    "prebuild": "tsc -b",
     "build": "lerna run build --stream --parallel",
     "docs": "typedoc packages/**/src/main",
     "uglify": "lerna run uglify --stream --parallel",
