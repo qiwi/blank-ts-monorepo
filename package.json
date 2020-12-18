@@ -16,7 +16,7 @@
     "test:report": "yarn test && yarn coveralls:push",
     "test:concurrent": "lerna run test --parallel --stream --no-prefix && yarn coverage:merge",
     "test:depcheck": "lerna run test:depcheck --parallel --stream --no-prefix",
-    "test:depaudit": "yarn audit --audit-level=moderate",
+    "test:depaudit": "yarn audit --level moderate",
     "test:depauditfix": "npx yarn-audit-fix --audit-level=moderate",
     "coverage:merge": "node scripts/js/coverage-merge.js",
     "coveralls:push": "cat ./coverage/lcov.info | coveralls || echo 'coveralls push failed :(' && exit 0",
@@ -24,7 +24,7 @@
     "build": "lerna run build --stream --parallel",
     "docs": "typedoc packages/**/src/main",
     "uglify": "lerna run uglify --stream --parallel",
-    "postupdate": "yarn && yarn bootstrap && yarn test:depaudit && yarn clean && yarn build && yarn test"
+    "postupdate": "yarn && yarn bootstrap && yarn test:depauditfix && yarn clean && yarn build && yarn test"
   },
   "devDependencies": {
     "@types/jest": "^26.0.19",
