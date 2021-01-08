@@ -1,5 +1,9 @@
 {
   "collectCoverage": true,
+  "collectCoverageFrom": [
+    "<rootDir>/**/src/main/**/*.(j|t)s"
+  ],
+  "testFailureExitCode": 1,
   "projects": [
     "<rootDir>/packages/common/jest.config.json",
     "<rootDir>/packages/facade/jest.config.json",
