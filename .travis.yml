@@ -96,4 +96,3 @@ jobs:
       workspaces:
         use: linux-shared
       script: npx -p @qiwi/semrel-toolkit multi-semrel
-      # script: echo 'Deploy step is disabled' && exit 0
