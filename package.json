@@ -24,11 +24,12 @@
     "build": "lerna run build --stream --parallel",
     "docs": "typedoc packages/**/src/main",
     "uglify": "lerna run uglify --stream --parallel",
+    "deps:update": "npx npm-upgrade-monorepo",
     "postupdate": "yarn && yarn bootstrap && yarn test:depauditfix && yarn clean && yarn build && yarn test"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.30",
+    "@types/node": "^14.14.31",
     "coveralls": "^3.1.0",
     "find-git-root": "^1.0.4",
     "jest": "^26.6.3",
