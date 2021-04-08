@@ -28,7 +28,7 @@
     "format": "prettier --write 'src/**/*.ts'",
     "test": "npm-run-all -p -l lint test:unit test:depcheck",
     "test:unit": "jest --config=jest.config.json --runInBand",
-    "test:depcheck": "depcheck --ignores tslib,eslint-*,prettier-*,*-infra --ignore-patterns typings",
+    "test:depcheck": "depcheck --ignores tslib,eslint-*,prettier-*,**/*-infra --ignore-patterns typings",
     "prebuild": "buildstamp --git --out.path buildstamp.json",
     "build": "npm-run-all -p -l build:es5 build:es6 build:ts build:libdef docs",
     "build:es5": "mkdirp target/es5 && tsc -p tsconfig.es5.json",
