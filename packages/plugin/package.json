@@ -41,7 +41,7 @@
     "postupdate": "yarn && yarn build && yarn test"
   },
   "dependencies": {
-    "tslib": "^2.1.0",
+    "tslib": "^2.2.0",
     "blank-ts-monorepo-common": "*"
   },
   "devDependencies": {},
