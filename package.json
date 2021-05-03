@@ -25,11 +25,12 @@
     "docs": "typedoc packages/**/src/main",
     "uglify": "lerna run uglify --stream --parallel",
     "deps:update": "npx npm-upgrade-monorepo",
-    "postupdate": "yarn && yarn bootstrap && yarn test:depauditfix && yarn clean && yarn build && yarn test"
+    "postupdate": "yarn && yarn bootstrap && yarn test:depauditfix && yarn clean && yarn build && yarn test",
+    "updeps": "npm_config_yes=true npx npm-upgrade-monorepo"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.33",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.0.1",
     "coveralls": "^3.1.0",
     "find-git-root": "^1.0.4",
     "jest": "^26.6.3",
