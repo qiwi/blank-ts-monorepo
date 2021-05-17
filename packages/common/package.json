@@ -41,7 +41,7 @@
     "updeps": "npm_config_yes=true npx npm-upgrade-monorepo"
   },
   "dependencies": {
-    "@qiwi/substrate": "^1.20.7",
+    "@qiwi/substrate": "^1.20.8",
     "tslib": "^2.2.0"
   },
   "devDependencies": {

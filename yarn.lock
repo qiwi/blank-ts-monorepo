@@ -1444,20 +1444,20 @@
     pkg-dir "^5.0.0"
     tslib "^2.1.0"
 
-"@qiwi/npm-run-all@^4.1.6":
-  version "4.1.6"
-  resolved "https://registry.yarnpkg.com/@qiwi/npm-run-all/-/npm-run-all-4.1.6.tgz#d271ea91ffde0e5c224d1a281e9bb3f2e4bd802a"
-  integrity sha512-EMYawr7tOMPHTHkY2dliCvrGrcX4bbi6yhXT8LGiJ0YDfJDFkq+X3Gn5QJ4JvUbQAj6PnRnGEvi/aHJ5CmF85A==
+"@qiwi/npm-run-all@^4.1.7":
+  version "4.1.7"
+  resolved "https://registry.yarnpkg.com/@qiwi/npm-run-all/-/npm-run-all-4.1.7.tgz#2b5836456c11e13f284464c38a87e687fa1d21a6"
+  integrity sha512-AG+pDHGTakf2an81xH+cuJ7PLnOdJz7YvVD9zPk0qDwYE5eh+te4ED0fxRaU/1Kn64kq4AM3LlAOnpFc8B0Usw==
   dependencies:
-    ansi-styles "^5.0.0"
-    chalk "^4.1.0"
+    ansi-styles "^5.2.0"
+    chalk "^4.1.1"
     cross-spawn "^7.0.3"
     memorystream "^0.3.1"
     minimatch "^3.0.4"
     pidtree "^0.5.0"
     read-pkg "^5.2.0"
     shell-quote "^1.7.2"
-    string.prototype.padend "^3.1.1"
+    string.prototype.padend "^3.1.2"
 
 "@qiwi/substrate-abstract@1.20.2":
   version "1.20.2"
@@ -1479,14 +1479,19 @@
   resolved "https://registry.yarnpkg.com/@qiwi/substrate-types/-/substrate-types-1.51.0.tgz#6ce764e686028937020ea4c831064111c3847084"
   integrity sha512-TDSZn2deqw9ismvfJ3pG5xm5JwrCzzS5D4YVaTFxzyAW+ofPfSG7Yp/yP46Yh1RNwfygxGOWjZx3D1fb0H63UQ==
 
-"@qiwi/substrate@^1.20.7":
-  version "1.20.7"
-  resolved "https://registry.yarnpkg.com/@qiwi/substrate/-/substrate-1.20.7.tgz#e2855d5cb406668e522a6e236431624d430dffd5"
-  integrity sha512-sKnfOLi0MpP2OHXRTWqfvc9YCoPuFkyCoOh9WsGbgksaW5zk5/5LLDrSY5TQQUYi+mahuJuoM1jzUTGjnKVPJQ==
+"@qiwi/substrate-types@1.52.0":
+  version "1.52.0"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate-types/-/substrate-types-1.52.0.tgz#ae5dee7e7dcce580ad76dba7cc11f32485cebd63"
+  integrity sha512-aLJUT5gSclJV/jJ/x8xpzZw6PZrE3PACoglNnOu119Vqx2DwfRpLpsZO9O7hno8YLzAqqlJbXwhga8RAqYtXsw==
+
+"@qiwi/substrate@^1.20.8":
+  version "1.20.8"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate/-/substrate-1.20.8.tgz#7904d3c0a6fe27b5fd09bde13f306872dfa860bd"
+  integrity sha512-FLgLUD/qqKkuJR3UNqs1uvvcsH0987amWwinaYyiOcMBjqx72CzylbbQvYVuyYfzBVCTs+6Be0y4f1atD+xQvw==
   dependencies:
     "@qiwi/substrate-abstract" "1.20.2"
     "@qiwi/substrate-std" "1.3.2"
-    "@qiwi/substrate-types" "1.51.0"
+    "@qiwi/substrate-types" "1.52.0"
     tslib "^2.2.0"
 
 "@sinonjs/commons@^1.7.0":
@@ -1643,10 +1648,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.35.tgz#42c953a4e2b18ab931f72477e7012172f4ffa313"
   integrity sha512-Lt+wj8NVPx0zUmUwumiVXapmaLUcAk3yPuHCFVXras9k5VT9TdhJqKqGVUQCD60OTMCl0qxJ57OiTL0Mic3Iag==
 
-"@types/node@^15.0.2":
-  version "15.0.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.0.2.tgz#51e9c0920d1b45936ea04341aa3e2e58d339fb67"
-  integrity sha512-p68+a+KoxpoB47015IeYZYRrdqMUcpbK8re/zpFB8Ld46LHC1lPEbp3EXgkEhAYEcPvjJF6ZO+869SQ0aH1dcA==
+"@types/node@^15.3.0":
+  version "15.3.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.3.0.tgz#d6fed7d6bc6854306da3dea1af9f874b00783e26"
+  integrity sha512-8/bnjSZD86ZfpBsDlCIkNXIvm+h6wi9g7IqL+kmFkQ+Wvu3JrasgLElfiPgoo8V8vVfnEi0QVS12gbl94h9YsQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -1940,7 +1945,7 @@ ansi-styles@^4.0.0, ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
-ansi-styles@^5.0.0:
+ansi-styles@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-5.2.0.tgz#07449690ad45777d1924ac2abb2fc8895dba836b"
   integrity sha512-Cxwpt2SfTzTtXcfOlzGEee8O+c+MmUgGrNiBcXnuWxuFJHe6a5Hz7qwhwe5OgaSYI0IJvkLqWX1ASG+cJOkEiA==
@@ -2318,7 +2323,7 @@ buildstamp@^1.4.2:
     meow "^9.0.0"
     tslib "^2.1.0"
 
-builtin-modules@^3.0.0, builtin-modules@^3.1.0:
+builtin-modules@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-3.2.0.tgz#45d5db99e7ee5e6bc4f362e008bf917ab5049887"
   integrity sha512-lGzLKcioL90C7wMczpkY0n/oART3MbBa8R9OFGE1rJxoVI86u4WAGfEk8Wjv10eKSyTHVGkSo3bvBylCEtk7LA==
@@ -2452,7 +2457,7 @@ chalk@^2.0.0:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^4.0.0, chalk@^4.1.0:
+chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.1.tgz#c80b3fab28bf6371e6863325eee67e618b77e6ad"
   integrity sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==
@@ -3068,15 +3073,14 @@ delegates@^1.0.0:
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
   integrity sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=
 
-depcheck@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/depcheck/-/depcheck-1.4.0.tgz#1b49e0da4ce32f2e372da9be7ba25b139b7b9a00"
-  integrity sha512-zn63rsHvFfWVgHV/SW4wXT5vqjQpCIGukpnoU2IspU3Lp0Va8/9wFWAsd2V1VzU+AFiFZGdjHZU9nLZQra+1Tg==
+depcheck@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/depcheck/-/depcheck-1.4.1.tgz#1dfbac61ad6411ae407050a383e7411eb8933ad2"
+  integrity sha512-ecX8zIXE9TlVu14ebnZTwgIeP/t/Rq2WpowjWbMuqG6ayozVVf9zKW4EBEQ/HsS1dxhY+J9+UiRetu2UMxG9ww==
   dependencies:
     "@babel/parser" "^7.12.5"
     "@babel/traverse" "^7.12.5"
     "@vue/compiler-sfc" "^3.0.5"
-    builtin-modules "^3.1.0"
     camelcase "^6.2.0"
     cosmiconfig "^7.0.0"
     debug "^4.2.0"
@@ -3336,10 +3340,10 @@ eslint-config-prettier@^8.3.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
   integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
 
-eslint-config-qiwi@^1.11.4:
-  version "1.11.4"
-  resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.11.4.tgz#e8af931922f815b4b5ce397a59b767df5f040d1f"
-  integrity sha512-N+xjW1ov6LHsStgQru0/ng+Cuo8ZNL3RA4Oga2BMouMdymfBwkfdlFvV2B2v3iva79/8GzSzo2e2etbELJqa+w==
+eslint-config-qiwi@^1.12.1:
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.12.1.tgz#ee318a470c30ba77d348ffc2dd72fb4291c0ea0a"
+  integrity sha512-0kiWn4yvtY8V+8spGTW1oFoCdXFqUNOzP+bLgz9G8+k2D7sWrLxgfDbcXu1+TVlA+4d+5esKHMC0gsc8TBv9Pw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.22.1"
     "@typescript-eslint/parser" "^4.22.1"
@@ -3353,7 +3357,7 @@ eslint-config-qiwi@^1.11.4:
     eslint-plugin-react-hooks "^4.2.0"
     eslint-plugin-simple-import-sort "^7.0.0"
     eslint-plugin-sonarjs "^0.7.0"
-    eslint-plugin-unicorn "^31.0.0"
+    eslint-plugin-unicorn "^32.0.0"
 
 eslint-config-standard-qiwi@^16.0.3:
   version "16.0.3"
@@ -3465,16 +3469,15 @@ eslint-plugin-sonarjs@^0.7.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-sonarjs/-/eslint-plugin-sonarjs-0.7.0.tgz#2dbad45e03a6a4de687756b659e88bf3f977383f"
   integrity sha512-vi6zGkd5Eznc32AQlleWUOMrMeDiUih9wR7nPPfrDCyVRmwYNHIBRPZGv1EgXwELwaPghCSvoAoHoR7uSbBF/Q==
 
-eslint-plugin-unicorn@^31.0.0:
-  version "31.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-31.0.0.tgz#53eef3f5152ddaa531888f77a420313e30d9864a"
-  integrity sha512-HR3gI4ANtV8A+0FLAaxjBD/G5J3PWBo+7OswyGeK5nylGqtKLJVbnPksIkBgmVg+SFpxu5MnjaxQQI+9KjyVAg==
+eslint-plugin-unicorn@^32.0.0:
+  version "32.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-32.0.1.tgz#a7cb9f538441b78936a96261eea4392d76526d77"
+  integrity sha512-LaZ9utnXtOJjnoDkpm+nQsONUUmyRR0WD6PGROSdQRRW3LRmgK/ZP8wxjW+Ai+2uolKTtuJzLx2mvbIeIoLqpg==
   dependencies:
     ci-info "^3.1.1"
     clean-regexp "^1.0.0"
     eslint-template-visitor "^2.3.2"
     eslint-utils "^2.1.0"
-    eslint-visitor-keys "^2.0.0"
     import-modules "^2.1.0"
     is-builtin-module "^3.1.0"
     lodash "^4.17.21"
@@ -6997,10 +7000,15 @@ prettier-config-qiwi@^1.4.1:
   resolved "https://registry.yarnpkg.com/prettier-config-qiwi/-/prettier-config-qiwi-1.4.1.tgz#d324cdaf29dd24906ba0cc01b7b3ca7bdee0052f"
   integrity sha512-Wc1LFv4BMkpBKd8MFOvoOKEyktKUNSCWAWMMK/gSkm0xsWJkARtIKFuP0hX9CdxJtwPnay3Nw2KSvnpWnbg5Tw==
 
-prettier@^2.1.1, prettier@^2.2.1:
+prettier@^2.1.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
   integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
+
+prettier@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.3.0.tgz#b6a5bf1284026ae640f17f7ff5658a7567fc0d18"
+  integrity sha512-kXtO4s0Lz/DW/IJ9QdWhAf7/NmPWQXkFr/r/WkR3vyI+0v8amTDxiaQSLzs8NBlytfLWX/7uQUMIW677yLKl4w==
 
 pretty-format@^26.0.0, pretty-format@^26.6.2:
   version "26.6.2"
@@ -8034,7 +8042,7 @@ string.prototype.matchall@^4.0.4:
     regexp.prototype.flags "^1.3.1"
     side-channel "^1.0.4"
 
-string.prototype.padend@^3.1.1:
+string.prototype.padend@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/string.prototype.padend/-/string.prototype.padend-3.1.2.tgz#6858ca4f35c5268ebd5e8615e1327d55f59ee311"
   integrity sha512-/AQFLdYvePENU3W5rgurfWSMU6n+Ww8n/3cUt7E+vPBB/D7YDG8x+qjoFs4M/alR2bW7Qg6xMjVwWUOvuQ0XpQ==
