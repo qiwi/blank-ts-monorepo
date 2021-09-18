@@ -28,7 +28,7 @@
     "format": "prettier --write 'src/**/*.ts'",
     "test": "npm-run-all -p -l lint test:unit test:depcheck",
     "test:unit": "jest --config=jest.config.json --runInBand",
-    "test:depcheck": "depcheck --ignores tslib,eslint-*,prettier-*,**/*-infra --ignore-patterns typings",
+    "test:depcheck": "depcheck --ignores typedoc,tslib,eslint-*,prettier-*,**/*-infra --ignore-patterns typings",
     "prebuild": "buildstamp --git --out.path buildstamp.json",
     "build": "npm-run-all -p -l build:es5 build:es6 build:ts build:libdef docs",
     "build:es5": "mkdirp target/es5 && tsc -p tsconfig.es5.json",
@@ -37,11 +37,10 @@
     "build:libdef": "libdefkit --tsconfig=tsconfig.es5.json --tsconfig=tsconfig.es6.json",
     "docs": "typedoc",
     "uglify": "for f in $(find target -name '*.js'); do short=${f%.js}; terser -c -m -o $short.js -- $f; done",
-    "deps:upgrade": "npx npm-upgrade-monorepo",
     "postupdate": "yarn && yarn build && yarn test"
   },
   "dependencies": {
-    "tslib": "^2.2.0",
+    "tslib": "^2.3.1",
     "blank-ts-monorepo-common": "*"
   },
   "devDependencies": {},
