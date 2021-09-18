@@ -1,5 +1,5 @@
 # blank-ts-monorepo
-Template mono repository for TS OSS projects  
+Template monorepository for TS OSS projects  
 
 [![Build Status](https://travis-ci.com/qiwi/blank-ts-monorepo.svg?branch=master)](https://travis-ci.com/qiwi/blank-ts-monorepo)
 [![David](https://img.shields.io/david/dev/qiwi/blank-ts-monorepo?label=deps)](https://david-dm.org/qiwi/blank-ts-monorepo?type=dev)
