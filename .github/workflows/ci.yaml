@@ -64,7 +64,6 @@ jobs:
         if: ${{ steps.check-artifact.outputs.exists == 'false' }}
         run: |
           yarn build
-#          yarn uglify
           tar -cvf artifact.tar packages/*/target packages/*/flow-typed packages/*/typings packages/*/docs package.json
       - name: Save artifact
         if: ${{ steps.check-artifact.outputs.exists == 'false' }}
