@@ -19,7 +19,7 @@
     "infra:libdefkit": "cd $INIT_CWD && libdefkit",
     "infra:buildstamp": "cd $INIT_CWD && buildstamp",
     "infra:c8": "cd $INIT_CWD && c8",
-    "infra:depcheck": "cd $INIT_CWD && depcheck --ignores='typedoc,tslib,earljs,uvu,eslint-*,prettier-*,**/*-infra' --ignore-patterns='typings'",
+    "infra:depcheck": "cd $INIT_CWD && depcheck",
     "infra:eslint": "cd $INIT_CWD && eslint",
     "infra:prettier": "cd $INIT_CWD && prettier",
     "infra:rimraf": "cd $INIT_CWD && rimraf",
