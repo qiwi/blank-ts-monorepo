@@ -1,11 +1,14 @@
+import  { expect } from "earljs"
+import { test } from "uvu"
+
 import {
   baz,
   foo
 } from '../../main/ts'
 
-describe('', () => {
-  it('', () => {
-    expect(foo).toBe('bar')
-    expect(baz).toEqual({})
-  })
+test('', () => {
+  expect(foo).toEqual('bar')
+  expect(baz).toLooseEqual({})
 })
+
+test.run()
