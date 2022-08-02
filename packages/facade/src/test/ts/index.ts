@@ -1,7 +1,10 @@
+import  { expect } from "earljs"
+import { test } from "uvu"
+
 import { foo } from '../../main/ts'
 
-describe('', () => {
-  it('', () => {
-    expect(foo).toBe('bar')
-  })
+test('', () => {
+  expect(foo).toEqual('bar')
 })
+
+test.run()

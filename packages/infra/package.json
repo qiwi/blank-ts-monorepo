@@ -1,7 +1,6 @@
 {
   "name": "blank-ts-monorepo-infra",
   "version": "0.0.0",
-  "private": false,
   "publishConfig": {
     "access": "public"
   },
@@ -18,25 +17,22 @@
     "postupdate": "yarn"
   },
   "devDependencies": {
-    "@qiwi/libdefkit": "^3.1.1",
+    "@qiwi/libdefkit": "^4.0.8",
     "@qiwi/npm-run-all": "^4.1.7",
-    "@swissquote/crafty-preset-jest": "^1.15.0",
-    "@types/jest": "^27.0.2",
-    "buildstamp": "^1.4.3",
-    "cpy-cli": "^3.1.1",
-    "depcheck": "^1.4.2",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-config-qiwi": "^1.13.6",
-    "jest": "^27.2.1",
+    "buildstamp": "^2.0.0",
+    "cpy-cli": "^4.1.0",
+    "depcheck": "^1.4.3",
+    "earljs": "^0.2.3",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-qiwi": "^1.17.4",
     "mkdirp": "^1.0.4",
-    "prettier": "^2.4.1",
-    "prettier-config-qiwi": "^1.4.2",
+    "prettier": "^2.7.1",
+    "prettier-config-qiwi": "^1.7.2",
     "rimraf": "^3.0.2",
-    "terser": "^5.9.0",
-    "ts-jest": "^27.0.5",
-    "typedoc": "^0.22.4",
-    "typescript": "^4.4.3"
+    "terser": "^5.14.2",
+    "typedoc": "^0.23.10",
+    "typescript": "^4.7.4"
   },
   "license": "MIT",
   "author": "Anton Golub <mailbox@antongolub.ru>",
