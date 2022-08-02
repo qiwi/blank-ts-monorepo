@@ -34,6 +34,7 @@
     "find-git-root": "^1.0.4",
     "snazzy": "^9.0.0",
     "tsm": "^2.2.2",
+    "typedoc": "^0.23.10",
     "uvu": "^0.5.6"
   },
   "repository": {
