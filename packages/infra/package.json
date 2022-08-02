@@ -25,7 +25,6 @@
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-qiwi": "^1.17.4",
-    "mkdirp": "^1.0.4",
     "prettier": "^2.7.1",
     "prettier-config-qiwi": "^1.7.2",
     "rimraf": "^3.0.2",
