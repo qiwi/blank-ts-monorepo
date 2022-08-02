@@ -1213,7 +1213,6 @@ __metadata:
   resolution: "blank-ts-monorepo-infra@workspace:packages/infra"
   dependencies:
     "@qiwi/libdefkit": "npm:^4.0.8"
-    "@qiwi/npm-run-all": "npm:^4.1.7"
     buildstamp: "npm:^2.0.0"
     cpy-cli: "npm:^4.1.0"
     depcheck: "npm:^1.4.3"
@@ -1244,6 +1243,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "blank-ts-monorepo@workspace:."
   dependencies:
+    "@qiwi/npm-run-all": "npm:^4.1.7"
     "@types/node": "npm:^18.6.3"
     c8: "npm:^7.12.0"
     coveralls: "npm:^3.1.1"
