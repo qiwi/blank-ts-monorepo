@@ -20,9 +20,8 @@
     "coverage:merge": "node scripts/js/coverage-merge.js",
     "coveralls:push": "cat ./coverage/lcov.info | coveralls || echo 'coveralls push failed :(' && exit 0",
     "prebuild": "yarn infra:tsc -b",
-    "build": "yarn workspaces foreach --parallel --topological-dev --no-private run build",
-    "uglify": "yarn workspaces foreach --parallel --topological-dev --no-private run uglify",
-    "docs": "typedoc packages/**/src/main",
+    "build": "yarn workspaces foreach -pt run build",
+    "docs": "typedoc packages/*/src/main",
     "postupdate": "yarn && yarn clean && yarn build && yarn test",
     "updeps": "npm_config_yes=true npx npm-upgrade-monorepo"
   },
