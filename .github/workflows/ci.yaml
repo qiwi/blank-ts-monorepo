@@ -205,7 +205,7 @@ jobs:
 
   release:
     name: Release
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' && env.CI_RELEASE == true }}
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master' && $CI_RELEASE == true
     needs: [test_push, init]
     runs-on: ubuntu-20.04
     steps:
