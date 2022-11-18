@@ -21,6 +21,10 @@ lib-cov
 coverage
 .nyc_output
 
+# Codeclimate
+cc-reporter
+cc-reporter.*
+
 # Bundle
 build
 dist
@@ -73,3 +77,9 @@ buildcache
 !.yarn/versions
 
 .npmrc
+
+# Creds
+*.asc
+*.key
+*.pem
+*.cert
