@@ -26,12 +26,12 @@
     "updeps": "npm_config_yes=true npx npm-upgrade-monorepo"
   },
   "devDependencies": {
-    "@types/node": "^18.6.3",
+    "@types/node": "^18.11.18",
     "coveralls": "^3.1.1",
     "find-git-root": "^1.0.4",
     "snazzy": "^9.0.0",
-    "tsm": "^2.2.2",
-    "typedoc": "^0.23.10",
+    "tsm": "^2.3.0",
+    "typedoc": "^0.23.23",
     "uvu": "^0.5.6"
   },
   "repository": {

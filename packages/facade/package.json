@@ -41,7 +41,7 @@
   "dependencies": {
     "blank-ts-monorepo-common": "workspace:*",
     "blank-ts-monorepo-plugin": "workspace:*",
-    "tslib": "^2.4.0"
+    "tslib": "^2.4.1"
   },
   "repository": {
     "type": "git",
