@@ -1,2 +1,2 @@
-export * from 'blank-ts-monorepo-common'
-export * from 'blank-ts-monorepo-plugin'
+export * from '@qiwi/blank-ts-monorepo-common'
+export * from '@qiwi/blank-ts-monorepo-plugin'

@@ -1,0 +1,1 @@
+# @qiwi/blank-ts-monorepo-infra

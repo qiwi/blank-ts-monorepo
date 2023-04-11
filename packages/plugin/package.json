@@ -1,5 +1,5 @@
 {
-  "name": "blank-ts-monorepo-plugin",
+  "name": "@qiwi/blank-ts-monorepo-plugin",
   "version": "0.0.0",
   "publishConfig": {
     "access": "public"
@@ -39,8 +39,8 @@
     "postupdate": "yarn && yarn build && yarn test"
   },
   "dependencies": {
-    "blank-ts-monorepo-common": "workspace:*",
-    "tslib": "^2.4.1"
+    "@qiwi/blank-ts-monorepo-common": "workspace:*",
+    "tslib": "^2.5.0"
   },
   "repository": {
     "type": "git",

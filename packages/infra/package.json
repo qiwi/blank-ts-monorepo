@@ -1,5 +1,5 @@
 {
-  "name": "blank-ts-monorepo-infra",
+  "name": "@qiwi/blank-ts-monorepo-infra",
   "version": "0.0.0",
   "publishConfig": {
     "access": "public"
@@ -32,19 +32,19 @@
     "@qiwi/libdefkit": "^5.0.0",
     "@qiwi/npm-run-all": "^4.1.7",
     "buildstamp": "^2.1.1",
-    "c8": "^7.12.0",
+    "c8": "^7.13.0",
     "cpy-cli": "^4.2.0",
     "depcheck": "^1.4.3",
     "earljs": "^0.2.3",
-    "eslint": "^8.31.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-config-qiwi": "^2.0.7",
-    "mkdirp": "^1.0.4",
-    "prettier": "^2.8.1",
-    "prettier-config-qiwi": "^2.0.1",
-    "rimraf": "^3.0.2",
-    "terser": "^5.16.1",
-    "typescript": "^4.9.4"
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-qiwi": "^2.1.1",
+    "mkdirp": "^3.0.0",
+    "prettier": "^2.8.7",
+    "prettier-config-qiwi": "^2.1.0",
+    "rimraf": "^5.0.0",
+    "terser": "^5.16.9",
+    "typescript": "^5.0.4"
   },
   "license": "MIT",
   "author": "Anton Golub <mailbox@antongolub.ru>",
